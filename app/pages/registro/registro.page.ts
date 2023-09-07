@@ -23,7 +23,7 @@ export class RegistroPage implements OnInit {
       carrera: [''],
       escuela: [''],
     }, {
-      validators: this.passwordMatchValidator // Usando el validador personalizado
+      validators: this.passwordMatchValidator 
     });
   }
 
@@ -43,7 +43,6 @@ export class RegistroPage implements OnInit {
     toast.present();
   }
 
-  // Validador personalizado para verificar que la contraseña y la confirmación coincidan
   passwordMatchValidator(formGroup: FormGroup) {
     const passwordControl = formGroup.get('password');
     const confirmPasswordControl = formGroup.get('confirmPassword');
@@ -63,10 +62,9 @@ export class RegistroPage implements OnInit {
   async registrar() {
     if (this.formularioRegistro.valid) {
       await this.mostrarToast();
-      // Aquí puedes agregar la lógica para enviar los datos de registro al servidor
+      
 
-      // Redirige al usuario al formulario de inicio de sesión (login.page)
-      this.router.navigate(['/login']);
+      this.router.navigate(['/home']);
     }
   }
 

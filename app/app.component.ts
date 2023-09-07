@@ -38,6 +38,4 @@ export class AppComponent {
       redirectTo: '/ajustes'
     },
   ]
-
-
 }

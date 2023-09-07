@@ -2,7 +2,6 @@ import { Component, OnInit, ElementRef, ViewChild  } from '@angular/core';
 import { MenuController } from '@ionic/angular';
 import Swiper from 'swiper';
 
-
 @Component({
   selector: 'app-nosotros',
   templateUrl: './nosotros.page.html',
@@ -36,6 +35,4 @@ export class NosotrosPage {
   goPrev() {
     this.swiper?.slidePrev();
   }
-
-
 }
