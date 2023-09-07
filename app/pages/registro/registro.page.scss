@@ -1,0 +1,27 @@
+ion-card-header {
+  text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.ion-content-center {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ajusta el alto según lo que necesites */
+}
+
+.boton-registrar {
+  justify-content: center;
+  align-items: center;
+  display:flex;
+  font-size: 11px; /* Ajusta el tamaño de fuente según tus preferencias */
+  padding: 5px 9px; /* Ajusta el relleno (padding) según tus preferencias */
+  width: auto; /* Elimina el ancho fijo para permitir que el botón sea más pequeño */
+}
+
+.enlace-login {
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

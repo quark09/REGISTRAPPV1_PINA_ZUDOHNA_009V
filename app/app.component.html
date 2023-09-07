@@ -1,0 +1,30 @@
+<ion-app>
+
+  <ion-menu contentId="main" menuId="first" side="start">
+
+    <ion-content>
+
+      <ion-item class="bg">
+        <ion-avatar slot="start">
+          <img src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <ion-label>
+          <h2> Menú Principal </h2>
+        </ion-label>
+      </ion-item>
+
+      <ion-list class="menu-items" lines="none">
+        <ion-menu-toggle *ngFor="let c of componentes">
+          <ion-item [routerLink]="c.redirectTo"
+              detail=true>
+            <ion-icon [name]="c.icon" slot="start" color="success"></ion-icon>
+            {{ c.nombre }}
+         </ion-item>
+        </ion-menu-toggle>
+     </ion-list>
+    </ion-content>
+  </ion-menu>
+  
+  <ion-router-outlet id="main"></ion-router-outlet>
+
+</ion-app>

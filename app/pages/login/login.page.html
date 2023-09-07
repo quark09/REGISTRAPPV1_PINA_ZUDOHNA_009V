@@ -1,0 +1,39 @@
+<ion-content class="ion-padding">
+  <div class="ion-content-center">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Iniciar sesión</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <div class="avatar-container">
+        <ion-avatar class="grande">
+          <img class="ion-padding imagen" src="https://ionicframework.com/docs/img/demos/avatar.svg" >
+      </ion-avatar>
+    </div>
+        <form [formGroup]="formularioLogin">
+          <ion-item>
+            <ion-label position="floating">Correo electrónico</ion-label>
+            <ion-input formControlName="correo"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input formControlName="password" type="password"></ion-input>
+          </ion-item>
+        </form>
+        <br>
+        <ion-button (click)="ingresar()" routerLink="/home" fill="solid" color="success" shape="round" class="boton-ingresar" [disabled]="!formularioLogin.valid">
+          Ingresar
+        </ion-button>
+        <ion-label routerLink="/registro" fill="solid" color="success" class="enlace-registro">
+          Registrarse
+        </ion-label>
+        <ion-label fill="solid" color="success" class="restablecer-contrasena">
+          Restablecer Contraseña
+        </ion-label>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+

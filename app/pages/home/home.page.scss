@@ -1,0 +1,52 @@
+.encabezado {
+    
+  margin-top: 20px;
+  margin-left: 10px;
+
+  h1 {
+      font-size: 1.6rem;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bolder;
+  }
+
+}
+
+.icon {
+  font-size: 5em;
+}
+
+.title {
+  font-size: 0.7em; 
+}
+
+.custom-card {
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f0f0f0; 
+  transition: transform 0.2s ease; 
+  margin: 10px; 
+}
+
+.custom-card:hover {
+  transform: translateY(-10px); 
+}
+
+.round-image {
+  border-radius: 50%;
+  max-width: 100px; 
+  margin: 0 auto; 
+}
+
+.title {
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 3px; 
+  font-weight: bold;
+  
+}
+
+.prueba {
+  width: 42px; 
+  height: 42px; 
+}
